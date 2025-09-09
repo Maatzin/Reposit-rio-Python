@@ -1,5 +1,4 @@
 import pygame
-import os
 
 # isso inicia o modulo do pygame
 pygame.init()
