@@ -1,22 +1,22 @@
 import pygame
 
-#isso inicia o modulo do pygame
+# Inicializando o Pygame
 pygame.init()
 
-#Definindo o tamanho da janela
-WITDH, HEIGHT = 800,600
-screen = pygame.display.set.mode((WITDH, HEIGHT))
-pygame.display.set_capiton("Janela Simples")
+# Definindo o tamanho da janela
+WIDTH, HEIGHT = 1000, 250
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Janela Simples")
 
+# Loop principal do jogo
 running = True
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            RUNNING = False 
+            running = False
 
-    #Atualizar a tela
+    # Atualizar a telappygameygame
     pygame.display.flip()
 
-#finalizar o Pygame
+# Finalizar o Pygame
 pygame.quit()
-
